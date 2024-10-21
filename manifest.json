@@ -1,0 +1,32 @@
+{
+    "name": "EXPRESS-AND-SASS",
+    "description": "Awesome application that will help you achieve your dreams.",
+    "short_name": "Doc",
+    "start_url": "/index.html",
+    "display": "browser",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFe1C4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icon-256x256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "icon-384x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
