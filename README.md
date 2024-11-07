@@ -1,2 +1,1 @@
-# GanaJakten
-Quiz App!!
+
