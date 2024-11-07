@@ -1,10 +1,51 @@
-body {
-  background: #6fda44;
-  color: #ffffff;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: green;
 }
-body h1 {
-  color: aquamarine;
+
+.container {
+  background-image: url('background.jpg'); /* Replace with the actual path to the background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
 }
-body p {
-  color: antiquewhite;
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.start-button {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
 }
