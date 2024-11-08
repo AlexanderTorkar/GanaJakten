@@ -6,11 +6,15 @@ body, html {
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
-  background-color: green;
+}
+
+body {
+  background-image: url('/styles/ghanass.jpg');
+  background-size: cover;
 }
 
 .container {
-  background-image: url('background.jpg'); /* Replace with the actual path to the background image */
+  background-image: url('gana.jpg'); /* Replace with the actual path to the background image */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,7 +40,7 @@ body, html {
 .start-button {
   font-size: 1.5rem;
   color: #fff;
-  background-color: #007bff;
+  background-color: red;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -47,5 +51,5 @@ body, html {
 }
 
 .start-button:hover {
-  background-color: #0056b3;
+  background-color: darkred;
 }

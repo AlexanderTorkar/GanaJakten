@@ -6,8 +6,12 @@ body, html {
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
-    background-color: green;
   }
+
+body {
+  background-image: url('/styles/ghanass.jpg');
+  background-size: cover;
+}
   
   .container {
     background-image: url('background.jpg'); /* Replace with the actual path to the background image */
