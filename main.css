@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-  background-image: url('/styles/ghanass.jpg');
+  background-image: url('styles/ghanass.jpg');
   background-size: cover;
 }
 

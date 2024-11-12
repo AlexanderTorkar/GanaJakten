@@ -9,12 +9,12 @@ body, html {
   }
 
 body {
-  background-image: url('/styles/ghanass.jpg');
+  background-image: url('styles/ghanass.jpg');
   background-size: cover;
 }
   
   .container {
-    background-image: url('background.jpg'); /* Replace with the actual path to the background image */
+    background-image: url('ghanass.jpg'); /* Replace with the actual path to the background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
