@@ -18,14 +18,14 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: #1a2238;
+    background: #01762E;
     color: white;
 }
 
 .container {
     width: 450px;
     height: 550px;
-    background: url('background.jpg') no-repeat center center/cover;
+    background-color: #009739;
     border-radius: 50px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
     display: flex;
@@ -38,7 +38,7 @@ body, html {
 
 .header h2 {
     font-size: 28px;
-    background-color: rgba(0, 0, 128, 0.7);
+    background-color: #CB2B35;
     padding: 10px;
     margin-top: 30px;
     border-radius: 10px;
@@ -61,7 +61,7 @@ body, html {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    background-color: #1e3a8a;
+    background-color: #CB2B35;
     border: none;
     border-radius: 10px;
     cursor: pointer;
