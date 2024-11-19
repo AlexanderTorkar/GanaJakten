@@ -20,7 +20,7 @@ body, html {
     font-family: Arial, sans-serif;
     background: #01762E;
     background-image: url('styles/ghanas.jpg');
-    color: black;
+    color: #2E2E2E;
 }
 
 .container {
@@ -61,7 +61,7 @@ body, html {
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: #2E2E2E;
     background: radial-gradient(#FFD100,#AC8D00);
     box-shadow: 8px 8px 25px whitesmoke;
     border: none;
@@ -79,8 +79,8 @@ body, html {
 /* for iphone */
 @media screen and (max-width: 480px) {
     .container {
-        width: 80%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
         border-radius: 20px;
         padding: 15px;
     }
