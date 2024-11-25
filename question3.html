@@ -7,6 +7,7 @@
     <script>navigator.serviceWorker.register("service-worker.js")</script> 
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,10 +18,10 @@
             <img src="styles/Flag_map_of_Ghana.svg" alt="Smiley Face">
         </div>
         <div class="options">
-            <button>A. Lagos</button>
-            <button>B. Kumasi</button>
-            <button>C. Nairobi</button>
-            <button onclick="window.location.href='question4.html';">D. Accra</button>
+            <button onclick="checkAnswer(this, 'D')">A. Lagos</button>
+            <button onclick="checkAnswer(this, 'D')">B. Kumasi</button>
+            <button onclick="checkAnswer(this, 'D')">C. Nairobi</button>
+            <button onclick="checkAnswer(this, 'D')">D. Accra</button>
         </div>
     </div>
 </body>

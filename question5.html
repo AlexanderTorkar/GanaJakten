@@ -7,6 +7,7 @@
     <script>navigator.serviceWorker.register("service-worker.js")</script> 
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -20,7 +21,7 @@
             <button>A. IFK</button>
             <button>B. Häcken</button>
             <button>C. Blåvitt</button>
-            <button>D. IFK Göteborg</button>
+            <button onclick="checkAnswer(this, 'D')">D. IFK Göteborg</button>
         </div>
     </div>
 </body>

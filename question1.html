@@ -8,6 +8,7 @@
     <script>navigator.serviceWorker.register("service-worker.js")</script> 
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,13 +16,13 @@
             <h2>Världens mest använda namn?</h2>
         </div>
         <div class="emoji">
-            <img src="styles/muhammad.webp" alt="Smiley Face">
+            <img src="styles/namn.jpg" alt="En bild på Namn?">
         </div>
         <div class="options">
-            <button onclick="window.location.href='question2.html';">A. Muhammad</button>
-            <button>B. Mary</button>
-            <button>C. Noah</button>
-            <button>D. Emma</button>
+            <button onclick="checkAnswer(this, 'A')">A. Muhammad</button>
+            <button onclick="checkAnswer(this, 'A')">B. Mary</button>
+            <button onclick="checkAnswer(this, 'A')">C. Noah</button>
+            <button onclick="checkAnswer(this, 'A')">D. Emma</button>
         </div>
     </div>
 </body>
