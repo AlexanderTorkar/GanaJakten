@@ -19,7 +19,7 @@ function checkAnswer(button, correctAnswer) {
     localStorage.setItem("answeredQuestions", answeredQuestions);
     
     // Redirect to the next question or results page
-    if (answeredQuestions < 5) { // Assuming there are 5 questions
+    if (answeredQuestions < 10) { // Assuming there are 5 questions
         window.location.href = `question${answeredQuestions + 1}.html`; // Navigate to the next question
     } else {
         window.location.href = 'results.html'; // Show final results after the last question
@@ -29,7 +29,7 @@ function checkAnswer(button, correctAnswer) {
 
 function displayResults() {
     const score = localStorage.getItem("score");
-    const totalQuestions = 5; // Set this based on your number of questions
+    const totalQuestions = 10; // Set this based on your number of questions
     
     document.getElementById("finalScore").textContent = `Du fick ${score} av ${totalQuestions} rätt!`;
 }
