@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Akaya'; /* Name your font family */
+  src: url('Akaya/AkayaTelivigala-Regular.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+
 body, html {
   margin: 0;
   padding: 0;
