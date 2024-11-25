@@ -37,6 +37,6 @@ function displayResults() {
 function resetGame() {
     localStorage.removeItem("score");
     localStorage.removeItem("answeredQuestions");
-    window.location.href = 'question1.html'; // Restart from the first question
+    window.location.href = 'index.html'; // Restart from the first question
 }
 
