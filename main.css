@@ -32,7 +32,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border: 10px solid #fff;
+  border: 5px dashed #fff;
   padding: 10px 20px;
   border-radius: 5px;
 }
