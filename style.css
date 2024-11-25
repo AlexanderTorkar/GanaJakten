@@ -19,7 +19,7 @@ body, html {
     align-items: center;
     font-family: Arial, sans-serif;
     background: #01762E;
-    background-image: url('styles/red.jpg');
+    background-image: url('styles/black.webp');
     color: #2E2E2E;
 }
 
@@ -28,7 +28,7 @@ body, html {
     height: 550px;
     background: linear-gradient(#009739, #005621);
     border-radius: 50px;
-    box-shadow: 0px 10px 15px red;
+    box-shadow: 0px 10px 10px red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ body, html {
 
 .emoji img {
     width: 150px;
-    height: 150px;
+    height: 130px;
 }
 
 .options {
