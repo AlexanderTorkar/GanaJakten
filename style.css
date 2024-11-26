@@ -39,12 +39,16 @@ body, html {
 
 .header h2 {
     font-size: 24px;
+    animation: message 1s ease-in-out 1.0s forwards;
     background: linear-gradient(#FFD100,#AC8D00);
     box-shadow: 4px 8px 45px #FFD100;
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
+    opacity: 0;
 }
+
+
 
 .emoji img {
     width: 150px;
