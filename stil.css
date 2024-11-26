@@ -112,6 +112,10 @@ button:hover {
     background-color: #EF3340;
 }
 
+.blu::before {
+    background-color: aqua;
+}
+
 @keyframes fire {
     0% {
         top: 100%;
@@ -168,19 +172,25 @@ button:hover {
 }
 
 #firework1 {
-    left: 25%;
+    left: 30%;
     top: 20%;
     transform: scale(1);
 }
 
 #firework2 {
     left: 60%;
-    top: 50%;
-    transform: scale(1.5);
+    top: 70%;
+    transform: scale(1.25);
 }
 
 #firework3 {
-    left: 20%;
-    top: 55%;
-    transform: scale(1.5);
+    left: 30%;
+    top: 65%;
+    transform: scale(1.25);
+}
+
+#firework4 {
+    left: 75%;
+    top: 20%;
+    transform: scale(1.);
 }
