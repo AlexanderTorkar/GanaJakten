@@ -81,7 +81,7 @@ button:hover {
 .cracker {
     position: absolute;
     width: 4px;
-    height: 120px;
+    height: 80px;
     transform-origin: 50% 95%;
     overflow: hidden;
 }
