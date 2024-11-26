@@ -8,8 +8,10 @@ body {
     margin: 0;
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 480px) {
+    body {
+        max-width: 100dvw;
+    }
 }
 
 .container {
@@ -85,6 +87,8 @@ button:hover {
     transform-origin: 50% 95%;
     overflow: hidden;
 }
+
+
 
 .cracker::before {
     content: '';
