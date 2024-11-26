@@ -9,7 +9,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    body {
+    .firework {
         max-width: 100dvw;
     }
 }
