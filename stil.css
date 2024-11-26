@@ -174,13 +174,13 @@ button:hover {
 }
 
 #firework2 {
-    left: 50%;
+    left: 60%;
     top: 50%;
     transform: scale(1.5);
 }
 
 #firework3 {
-    left: 80%;
-    top: 15%;
+    left: 20%;
+    top: 55%;
     transform: scale(1.5);
 }
