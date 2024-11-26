@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(#F5ECEC, #CBBFBF);
+    background-image: linear-gradient(to right, #d8cece, #fcfbfb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +190,7 @@ button:hover {
 #firework2 {
     left: 60%;
     top: 70%;
-    transform: scale(1.25);
+    transform: scale(1.55);
 }
 
 #firework3 {
