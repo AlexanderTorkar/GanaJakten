@@ -40,3 +40,7 @@ function resetGame() {
     window.location.href = 'index.html'; // Restart from the first question
 }
 
+function answers() {
+    windows.location.href = 'answers.html';
+}
+
