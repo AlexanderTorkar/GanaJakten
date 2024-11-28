@@ -10,20 +10,93 @@
     <link rel="manifest" href="manifest.json">
     <script src="script.js"></script>
 </head>
+
 <body>
     <div class="container">
-        <div class=" msg header">
-            <h2>Världens mest använda namn?</h2>
-        </div>
-        <div class="emoji">
-            <img src="styles/namn.jpg" alt="Bild på Namn?">
-        </div>
-        <div class="options">
-            <button onclick="checkAnswer(this, 'A')">A. Muhammad</button>
-            <button onclick="checkAnswer(this, 'A')">B. Mary</button>
-            <button onclick="checkAnswer(this, 'A')">C. Noah</button>
-            <button onclick="checkAnswer(this, 'A')">D. Emma</button>
-        </div>
-    </div>
+        <h1 id="question">Loading question...</h1>
+
+        <img id="image" src="" alt="" style="display: none;">
+        
+        <div id="options" class="options-container options button"></div>
+        
+        <script>
+        //Quiz dataa
+        const quiz = [
+            {
+                question: "What is the capital of France?",
+                image: "styles/ghana.svg",
+                options: ["Paris", "Rome", "Berlin", "Madrid"],
+                correct: 0
+            },
+            {
+                question: "What is 5 + 7?",
+                options: ["10", "12", "15", "9"],
+                correct: 1
+            },
+            {
+                question: "Which programming language is used for web development?",
+                options: ["Python", "JavaScript", "C++", "Java"],
+                correct: 1
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0
+
+         // Load the current question
+        function loadQuestion() {
+            const questionElement = document.getElementById('question');
+            const questionImage = document.getElementById('image');
+            const optionsElement = document.getElementById('options');
+            
+
+            
+            optionsElement.innerHTML = '';
+
+            // Get the current question
+            const currentQuestion = quiz[currentQuestionIndex];
+            questionElement.textContent = currentQuestion.question;
+
+            // Set the image if provided
+            if (currentQuestion.image) {
+                questionImage.src = currentQuestion.image;
+                questionImage.style.display = 'block';
+            } else {
+                questionImage.style.display = 'none';
+            }
+
+            // Load options
+            currentQuestion.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.textContent = option;
+                button.onclick = () => nextQuestion(index);
+                optionsElement.appendChild(button);
+            });
+        }
+
+         // Handle answer selection
+         function selectAnswer(selectedIndex) {
+            const currentQuestion = quiz[currentQuestionIndex];
+
+            // Check if the selected answer is correct
+            if (selectedIndex === currentQuestion.correct) {
+                score++;
+                localStorage.setItem("score", score); 
+            }
+         }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quiz.length) {
+                loadQuestion();
+            } else {
+                window.location.href = 'results.html';
+            }
+        }
+        // Initialize the quiz
+        loadQuestion();
+
+        </script>
+     </div>
 </body>
 </html>
