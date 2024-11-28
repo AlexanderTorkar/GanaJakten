@@ -7,20 +7,21 @@
     <script>navigator.serviceWorker.register("service-worker.js")</script> 
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h2>Sämsta laget i Allsvenskan?</h2>
+            <h2>Vilken stad höll de olympiska spelen 2002?</h2>
         </div>
         <div class="emoji">
-            <img src="styles/ifk ledsen.jpg" alt="Smiley Face">
+            <img src="styles/oss.jpg" alt="OS flagga">
         </div>
         <div class="options">
-            <button>A. IFK</button>
-            <button>B. Häcken</button>
-            <button>C. Blåvitt</button>
-            <button>D. IFK Göteborg</button>
+            <button onclick="checkAnswer(this, 'B')">A. (Japan) Tokyo</button>
+            <button onclick="checkAnswer(this, 'B')">B. (Australien) Sydney</button>
+            <button onclick="checkAnswer(this, 'B')">C. (Kina) Beijing</button>
+            <button onclick="checkAnswer(this, 'B')">D. (Frankrike) Paris</button>
         </div>
     </div>
 </body>

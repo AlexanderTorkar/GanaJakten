@@ -19,35 +19,40 @@ body, html {
     align-items: center;
     font-family: Arial, sans-serif;
     background: #01762E;
-    background-image: url('styles/back.jpg');
+    background-image: url('styles/black.webp');
     color: #2E2E2E;
 }
 
 .container {
     width: 450px;
     height: 550px;
-    background: radial-gradient(#03EB5C,#009739, #005621);
+    background: linear-gradient(#009739, #005621);
     border-radius: 50px;
-    box-shadow: 0px 10px 15px red;
+    box-shadow: 0px 5px 5px rgb(36, 1, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     text-align: center;
+    margin: auto;
 }
 
 .header h2 {
-    font-size: 28px;
-    background: radial-gradient(#FFD100,#AC8D00);
+    font-size: 24px;
+    background: linear-gradient(#FFD100,#AC8D00);
+    box-shadow: 4px 8px 45px #FFD100;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 10px;
 }
 
+
+
 .emoji img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 130px;
+    box-shadow: 4px 8px 50px rgb(36, 1, 1);
 }
 
 .options {
@@ -62,8 +67,8 @@ body, html {
     font-size: 20px;
     font-weight: bold;
     color: #2E2E2E;
-    background: radial-gradient(#FFD100,#AC8D00);
-    box-shadow: 8px 8px 25px whitesmoke;
+    background: linear-gradient(#FFD100,#AC8D00);
+    box-shadow: 4px 8px 25px #FFD100;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -98,7 +103,7 @@ body, html {
     }
 
     .options button {
-        font-size: 16px;
+        font-size: 24px;
         padding: 10px;
     }
 
@@ -106,3 +111,5 @@ body, html {
         font-size: 16px;
     }
 }
+
+

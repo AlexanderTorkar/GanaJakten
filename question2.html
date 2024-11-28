@@ -7,21 +7,22 @@
     <script>navigator.serviceWorker.register("service-worker.js")</script> 
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h2>Sämsta Kvargen Någonsin?</h2>
+            <h2>Vart uppfanns drickan te?</h2>
         </div>
         <div class="emoji">
-            <img src="styles/b0da9435-d6f4-4b7b-b95a-c05f989df3dc.jpg" alt="Smiley Face">
+            <img src="styles/te.jpg" alt="En bild på en kopp te">
         </div>
         <div class="options">
-            <button onclick="window.location.href='question3.html';">Valio Hallon och Blåbär</button>
-            <button>Arla Vanilj</button>
-            <button>Lindahls kvarg naturell</button>
-            <button>Ica Basic Kvarg Lätt</button>
+            <button onclick="checkAnswer(this, 'C')">A. Japan</button>
+            <button onclick="checkAnswer(this, 'C')">B. Storbritannien</button>
+            <button onclick="checkAnswer(this, 'C')">C. Kina</button>
+            <button onclick="checkAnswer(this, 'C')">D. Indien</button>
         </div>
-    </div>
 </body>
 </html>
