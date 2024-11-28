@@ -41,13 +41,15 @@
         ];
 
         let currentQuestionIndex = 0;
+        let score = 0
 
          // Load the current question
         function loadQuestion() {
             const questionElement = document.getElementById('question');
             const questionImage = document.getElementById('image');
             const optionsElement = document.getElementById('options');
-        
+            
+
             // Clear previous options
             optionsElement.innerHTML = '';
 
@@ -72,12 +74,23 @@
             });
         }
 
+         // Handle answer selection
+         function selectAnswer(selectedIndex) {
+            const currentQuestion = quiz[currentQuestionIndex];
+
+            // Check if the selected answer is correct
+            if (selectedIndex === currentQuestion.correct) {
+                score++;
+                localStorage.setItem("score", score); 
+            }
+         }
+
         function nextQuestion() {
             currentQuestionIndex++;
             if (currentQuestionIndex < quiz.length) {
                 loadQuestion();
             } else {
-                document.getElementById('quiz-container').innerHTML = "<h2>Quiz Completed!</h2>";
+                window.location.href = 'results.html';
             }
         }
         // Initialize the quiz
