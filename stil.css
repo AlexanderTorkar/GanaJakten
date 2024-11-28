@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to left,#cdcaca, #d8cece, #fcfbfb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +8,14 @@ body {
     margin: 0;
 }
 
+@media screen and (max-width: 480px) {
+    .firework {
+        max-width: 100dvw;
+    }
+}
+
 .container {
-    background-color: white;
+    background-color: #f5f3f3;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,8 +24,27 @@ body {
     width: 100%;
 }
 
+#finalScore {
+    opacity: 0;
+    animation: message 0.5s ease-in-out 0.5s forwards;
+}
+
 h2 {
     color: #333;
+    opacity: 0;
+    animation: message 0.5s ease-in-out 0.5s forwards;
+
+}
+
+
+
+@keyframes message {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 button {
@@ -35,4 +60,159 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.firework {
+    position: absolute;
+    opacity: 0;
+    animation: show_fireworks 1.0s ease-in-out 1.5s forwards;
+}
+
+@keyframes show_fireworks {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cracker {
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    transform-origin: 50% 95%;
+    overflow: hidden;
+}
+
+
+
+.cracker::before {
+    content: '';
+    background-color: yellow;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    animation: fire 2s ease-in-out infinite;
+}
+
+.gul::before {
+    background-color: #DDDA28;
+}
+
+.purple::before {
+    background-color: #AE1096;
+}
+
+.red::before {
+    background-color: #AD1025;
+}
+
+.blu::before {
+    background-color: #418BBB;
+}
+
+.black::before {
+    background-color: #0e1418;
+}
+
+.white::before {
+    background-color: rgb(201, 206, 210);
+}
+
+
+
+@keyframes fire {
+    0% {
+        top: 100%;
+    }
+    25% {
+        top: 50%;
+    }
+    50% {
+        top: -25%;
+    }
+    75% {
+        top: -50%;
+    }
+    100% {
+        top: -50%;
+    }
+}
+
+.cracker:nth-child(1) {
+    transform: rotate(0deg) translateY(-15px);
+}
+.cracker:nth-child(2) {
+    transform: rotate(30deg) translateY(-15px);
+}
+.cracker:nth-child(3) {
+    transform: rotate(60deg) translateY(-15px);
+}
+.cracker:nth-child(4) {
+    transform: rotate(90deg) translateY(-15px);
+}
+.cracker:nth-child(5) {
+    transform: rotate(120deg) translateY(-15px);
+}
+.cracker:nth-child(6) {
+    transform: rotate(150deg) translateY(-15px);
+}
+.cracker:nth-child(7) {
+    transform: rotate(180deg) translateY(-15px);
+}
+.cracker:nth-child(8) {
+    transform: rotate(210deg) translateY(-15px);
+}
+.cracker:nth-child(9) {
+    transform: rotate(240deg) translateY(-15px);
+}
+.cracker:nth-child(10) {
+    transform: rotate(270deg) translateY(-15px);
+}
+.cracker:nth-child(11) {
+    transform: rotate(300deg) translateY(-15px);
+}
+.cracker:nth-child(12) {
+    transform: rotate(330deg) translateY(-15px);
+}
+
+#firework1 {
+    left: 30%;
+    top: 20%;
+    transform: scale(1.4);
+}
+
+#firework2 {
+    left: 60%;
+    top: 70%;
+    transform: scale(1.55);
+}
+
+#firework3 {
+    left: 30%;
+    top: 65%;
+    transform: scale(1.25);
+}
+
+#firework4 {
+    left: 75%;
+    top: 10%;
+    transform: scale(1.);
+}
+
+#firework5 {
+    left: 80%;
+    top: 50%;
+    transform: scale(1.4);
+}
+
+#firework6 {
+    left: 15%;
+    top: 45%;
+    transform: scale(1.4);
 }
