@@ -35,6 +35,7 @@ body, html {
     justify-content: space-between;
     padding: 20px;
     text-align: center;
+    margin: auto;
 }
 
 .header h2 {
