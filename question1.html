@@ -13,9 +13,9 @@
 
 <body>
     <div class="container">
-        <h1 id="question">Loading question...</h1>
+        <h2 id="question">Loading question...</h2>
 
-        <img id="image" src="" alt="" style="display: none;">
+        <img id="image" class="emoji img" src="" alt="">
         
         <div id="options" class="options-container options button"></div>
         
@@ -23,21 +23,65 @@
         //Quiz dataa
         const quiz = [
             {
-                question: "What is the capital of France?",
-                image: "styles/ghana.svg",
-                options: ["Paris", "Rome", "Berlin", "Madrid"],
+                question: "Vad är världens mest använda namn?",
+                image: "styles/questionmark.jpg",
+                options: ["A. Mohammud", "B. Emma", "C. Noah", "D. Eva"],
                 correct: 0
             },
             {
-                question: "What is 5 + 7?",
-                options: ["10", "12", "15", "9"],
+                question: "Vart uppfanns drickan te?",
+                image: "styles/te.jpg",
+                options: ["A. Japan", "B. Storbritannien", "C. Kina", "D. Indien"],
+                correct: 2
+            },
+            {
+                question: "Vad heter Ghanas huvudstad?",
+                image: "styles/flag_map_of_Ghana.svg",
+                options: ["A. Lagos", "B. Kumasi", "C. Nairobi", "D. Accra"],
+                correct: 3
+            },
+            {
+                question: "Vem är den mest streamde artsiten (Spotify)?",
+                image: "styles/spotify.png",
+                options: ["A. Drake", "B. Arianna Grande", "C. Ed Sheeran", "D. Taylor Swift"],
+                correct: 3
+            },
+            {
+                question: "Vilken film har fått bäst betyg (imbd)?",
+                image: "styles/imbd.jpg",
+                options: ["A. The Shawshank Redemption", "B. The godfather", "C. The dark knight", "D. The godfather II"],
+                correct: 0
+            },
+            {
+                question: "Vilket år lanserades den första iphone??",
+                image: "styles/iphone.jpg",
+                options: ["A. 2005", "B. 2007", "C. 2009", "D. 2004"],
                 correct: 1
             },
             {
-                question: "Which programming language is used for web development?",
-                options: ["Python", "JavaScript", "C++", "Java"],
+                question: "Vilket år grundades Hogia?",
+                image: "styles/hogia.jpg",
+                options: ["A. 1977", "B. 1985", "C. 1980", "D. 1990"],
+                correct: 2
+            },
+            {
+                question: "Vilken volvo såldes mest under 2023 (globalt)?",
+                image: "styles/volvo.jpg",
+                options: ["A. XC40", "B. XC90", "C. V90", "D. XC60"],
+                correct: 3
+            },
+            {
+                question: "Vem uppfann World Wide Web (www)?",
+                image: "styles/www.png",
+                options: ["A. Bill Gates", "B. Tim Berners-Lee", "C. Elon Musk", "D. Steve Jobs "],
                 correct: 1
-            }
+            },
+            {
+                question: "Vilken stad höll de olympiska spelen 2002?",
+                image: "styles/os.png",
+                options: ["A. (Japan) Tokyo", "B. (Australien) Sydney", "C. (Kina) Beijing", "D. (Frankrike) Paris "],
+                correct: 1
+            },
         ];
 
         let currentQuestionIndex = 0;
