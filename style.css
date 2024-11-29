@@ -93,6 +93,14 @@ img {
     }
 }
 
+@media screen and (max-width: 490px) {
+    .options button:hover {
+        transform: scale(1.00);
+        background-color: #FFD100;
+    }
+    
+}
+
 /* for iphone */
 @media screen and (max-width: 479px) {
     .container {
