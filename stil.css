@@ -12,6 +12,9 @@ body {
     .firework {
         max-width: 100dvw;
     }
+    .container {
+        height: 90%;
+    }
 }
 
 .container {
