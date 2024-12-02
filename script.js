@@ -63,11 +63,11 @@ const quiz = [
         correct: 1
     },
     {
-        question: "Vilken stad höll de olympiska spelen 2002?",
+        question: "Vilket land höll de olympiska spelen 2002?",
         image: "styles/os.png",
-        options: ["A. (Japan) Tokyo", "B. (Australien) Sydney", "C. (Kina) Beijing", "D. (Frankrike) Paris"],
-        correct: 1
-    }
+        options: ["A. Japan", "B. Australien", "C. England", "D. USA"],
+        correct: 3
+    },
 ];
 
 
@@ -114,6 +114,9 @@ function resetGame() {
     window.location.href = 'index.html'; // Redirect to the start page
 }
 
+function answers() {
+    window.location.href = 'answers.html';
+}
 
 function checkAnswer(selectedIndex) {
     const currentQuestion = quiz[currentQuestionIndex];
