@@ -58,9 +58,38 @@ button {
     font-size: 16px;
 }
 
-button:hover {
-    background-color: #45a049;
-}
+.button-bordered {
+    border: none;
+    outline: none;
+    position: relative;
+  }
+  
+  .button-bordered::before,
+  .button-bordered::after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .button-bordered::before {
+    border-top: 2px solid #263059;
+    right: 0;
+    top: -4px;
+  }
+  
+  .button-bordered::after {
+    border-bottom: 2px solid #263059;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .button-bordered:hover::before,
+  .button-bordered:hover::after {
+    width: 100%;
+  }
 
 .firework {
     position: absolute;

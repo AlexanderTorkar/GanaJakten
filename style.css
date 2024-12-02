@@ -24,8 +24,8 @@ body, html {
 }
 
 .container {
-    width: 450px;
-    height: 550px;
+    width: 95%;
+    height: 95%;
     background: linear-gradient( rgb(182, 244, 146), rgb(51, 139, 147));;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgb(36, 1, 1);
@@ -38,34 +38,37 @@ body, html {
     margin: auto;
 }
 
-.header h2 {
+h2 {
     font-size: 24px;
     background: linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%);
     padding: 10px;
-    margin-top: 10px;
+    margin: 5px;
     border-radius: 10px;
     color: #000;
+    border: solid whitesmoke 2px;
 }
 
 
 
-.emoji img {
-    width: 150px;
-    height: 130px;
+img {
+    width: 180px;
+    height: 160px;
+    border-radius: 20px;
 }
 
 .options {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .options button {
-    width: 100%;
+    font-family: akaya;
+    width: 240px;
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(5, 122, 5);
+    color: rgb(0, 0, 0);
     background: linear-gradient(135deg, rgb(255, 168, 168) 10%, rgb(252, 255, 0) 100%);
     border: none;
     border-radius: 10px;
@@ -73,15 +76,33 @@ body, html {
     transition: transform 0.2s;
     display: flex;
     justify-content: center;
-    border: solid black 2px;
+    border: solid rgb(0, 0, 0) 3px;
+    box-shadow: 2px 2px 2px;
 }
 
 .options button:hover {
     transform: scale(1.05);
     background-color: #FFD100;
 }
+
+@media screen and (max-height: 540px) {
+    .options {
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .options button:hover {
+        transform: scale(1.00);
+        background-color: #FFD100;
+    }
+    
+}
+
 /* for iphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
     .container {
         width: 95%;
         height: 90%;
@@ -89,7 +110,7 @@ body, html {
         padding: 15px;
     }
 
-    .header h2 {
+    .h2 {
         font-size: 22px;
         margin-top: 15px;
         padding: 8px;
@@ -97,7 +118,7 @@ body, html {
 
     .emoji img {
         width: 240px;
-        height: 200px;
+        height: 240px;
         border-radius: 20px;
         margin-bottom: 10px;
     }
