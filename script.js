@@ -114,6 +114,9 @@ function resetGame() {
     window.location.href = 'index.html'; // Redirect to the start page
 }
 
+function answers() {
+    window.location.href = 'answers.html';
+}
 
 function checkAnswer(selectedIndex) {
     const currentQuestion = quiz[currentQuestionIndex];
