@@ -41,6 +41,6 @@ function resetGame() {
 }
 
 function answers() {
-    windows.location.href = 'answers.html';
+    window.location.href = 'answers.html';
 }
 
