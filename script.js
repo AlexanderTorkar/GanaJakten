@@ -137,3 +137,5 @@ function checkAnswer(selectedIndex) {
         window.location.href = 'results.html';
     }
 }
+
+
