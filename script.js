@@ -22,7 +22,7 @@ const quiz = [
     },
     {
         question: "Vad heter Ghanas huvudstad?",
-        image: "styles/flag_map_of_Ghana.svg",
+        image: "styles/flag_map_of_Ghana.png",
         options: ["A. Lagos", "B. Kumasi", "C. Nairobi", "D. Accra"],
         correct: 3
     },
