@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to left,#cdcaca, #d8cece, #fcfbfb);
+    background-image: linear-gradient(to left,#F5ECEC, #fcfbfb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    background-color: #f5f3f3;
+    background-image: linear-gradient(#f5f3f3, #CB2B35);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
