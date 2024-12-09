@@ -41,4 +41,6 @@ body {
 
 .A2, .B4, .C5, .D5, .E2, .F3, .G4, .H5, .I3, .J5 {
     background-color: greenyellow;
+    padding: 10px;
+    border-radius: 10px;
 }
