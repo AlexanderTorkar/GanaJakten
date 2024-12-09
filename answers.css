@@ -33,7 +33,7 @@ body {
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J {
     font-size: 24px;
     background: #FFF;
-    padding: 25px;
+    padding: 25px; 
     margin-top: 10px;
     border-radius: 20px;
     color: #000;
@@ -41,6 +41,6 @@ body {
 
 .A2, .B4, .C5, .D5, .E2, .F3, .G4, .H5, .I3, .J5 {
     background-color: greenyellow;
-    padding: 10px;
     border-radius: 10px;
+    padding: 10px;
 }
