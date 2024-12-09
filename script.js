@@ -22,7 +22,7 @@ const quiz = [
     },
     {
         question: "Vad heter Ghanas huvudstad?",
-        image: "styles/flag_map_of_Ghana.svg",
+        image: "styles/ghana-flagga.png",
         options: ["A. Lagos", "B. Kumasi", "C. Nairobi", "D. Accra"],
         correct: 3
     },
@@ -64,8 +64,8 @@ const quiz = [
     },
     {
         question: "Vilket land höll de olympiska spelen 2002?",
-        image: "styles/os.png",
-        options: ["A. Japan", "B. Australien", "C. England", "D. USA"],
+        image: "styles/oss.jpg",
+        options: ["A. Tokyo (Japan)", "B. Sydney (Australien)", "C. London (England)", "D. Salt lake city (USA)"],
         correct: 3
     },
 ];
@@ -137,3 +137,11 @@ function checkAnswer(selectedIndex) {
         window.location.href = 'results.html';
     }
 }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(error => console.error('Service Worker Registration Failed:', error));
+}
+
+

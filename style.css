@@ -80,6 +80,8 @@ img {
     box-shadow: 2px 2px 2px;
 }
 
+
+
 .options button:hover {
     transform: scale(1.05);
     background-color: #FFD100;
