@@ -144,4 +144,8 @@ if ('serviceWorker' in navigator) {
         .catch(error => console.error('Service Worker Registration Failed:', error));
 }
 
-
+function startOver() {
+    localStorage.removeItem("score"); // Clear the score
+    localStorage.removeItem("answeredQuestions"); // Clear progress
+    window.location.href = 'index.html'; // Redirect to the start page
+}
