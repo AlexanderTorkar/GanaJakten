@@ -36,6 +36,7 @@ body, html {
     padding: 20px;
     text-align: center;
     margin: auto;
+    overflow: hidden;
 }
 
 h2 {
@@ -51,8 +52,8 @@ h2 {
 
 
 img {
-    width: 180px;
-    height: 160px;
+    width: 170px;
+    height: 150px;
     border-radius: 20px;
 }
 
@@ -65,7 +66,7 @@ img {
 .options button {
     font-family: akaya;
     width: 240px;
-    padding: 15px;
+    padding: 12px;
     font-size: 20px;
     font-weight: bold;
     color: rgb(0, 0, 0);
@@ -89,7 +90,6 @@ img {
 
 @media screen and (max-height: 540px) {
     .options {
-        width: 80%;
         height: 80%;
         padding: 10px;
     }
@@ -132,6 +132,48 @@ img {
 
     body, html {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px) and (max-height: 580px) and (orientation: landscape) {
+    .container {
+        display: flex;
+        flex-wrap: wrap; /* Gör det möjligt att bryta rader om utrymmet inte räcker */
+        justify-content: center; /* Centrera innehållet horisontellt */
+        align-items: center; /* Centrera innehållet vertikalt */
+        gap: 20px; /* Mellanrum mellan elementen */
+        padding: 10px;
+        overflow: hidden; /* Håll innehållet inom boxen */
+    }
+
+    #question,
+    #image {
+        flex: 0 0 auto; /* Ta upp 40% av bredden, väx vid behov */
+        max-width: 50%; /* Begränsa maxbredden till 40% */
+        text-align: center;
+    }
+
+    #options {
+        flex: 1 1 50%; /* Ta upp 50% av bredden, väx vid behov */
+        max-width: 50%; /* Begränsa maxbredden till 50% */
+        display: flex;
+        flex-direction: column; /* Alternativen staplas vertikalt */
+        gap: 10px; /* Mellanrum mellan alternativen */
+        max-height: 70vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* Behåll proportionerna */
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+    }
+    
+    .options button {
+        padding: 10px;
     }
 }
 
