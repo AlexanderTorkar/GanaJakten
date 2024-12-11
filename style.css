@@ -138,27 +138,32 @@ img {
 @media screen and (max-width: 1200px) and (min-width: 600px) and (max-height: 580px) and (orientation: landscape) {
     .container {
         display: flex;
-        flex-wrap: wrap; /* Gör det möjligt att bryta rader om utrymmet inte räcker */
-        justify-content: center; /* Centrera innehållet horisontellt */
-        align-items: center; /* Centrera innehållet vertikalt */
-        gap: 20px; /* Mellanrum mellan elementen */
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: center; 
+        gap: 20px; 
         padding: 10px;
-        overflow: hidden; /* Håll innehållet inom boxen */
+        overflow: hidden; 
     }
 
     #question,
     #image {
-        flex: 0 0 auto; /* Ta upp 40% av bredden, väx vid behov */
-        max-width: 50%; /* Begränsa maxbredden till 40% */
+        flex: 0 0 auto; 
+        max-width: 50%; 
         text-align: center;
     }
 
+    #question {
+        width: 45%;
+        padding: 5px;
+    }
+
     #options {
-        flex: 1 1 50%; /* Ta upp 50% av bredden, väx vid behov */
-        max-width: 50%; /* Begränsa maxbredden till 50% */
+        flex: 1 1 50%;
+        max-width: 50%; 
         display: flex;
-        flex-direction: column; /* Alternativen staplas vertikalt */
-        gap: 10px; /* Mellanrum mellan alternativen */
+        flex-direction: column;
+        gap: 10px; 
         max-height: 70vh;
         align-items: center;
         justify-content: center;
@@ -166,11 +171,11 @@ img {
 
     img {
         max-width: 100%;
-        height: auto; /* Behåll proportionerna */
+        height: auto;
         display: block;
         margin: 0 auto;
         width: 170px;
-        height: 130px;
+        height: 150px;
     }
     
     .options button {
@@ -178,4 +183,9 @@ img {
     }
 }
 
-
+@media screen and (max-width: 800px) and (min-width: 600px) and (max-height: 580px) and (orientation: landscape) {
+    .container{
+        gap: 10px;
+        padding: 0px;
+    }
+}
