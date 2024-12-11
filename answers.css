@@ -12,8 +12,8 @@ body {
     background-size: cover;
     display: flex;
     margin: 0;
-    height: auto;
-    justify-content: center;
+    height: auto; 
+    justify-content: center; 
 }
 
 .header {
@@ -33,7 +33,7 @@ body {
 .A, .B, .C, .D, .E, .F, .G, .H, .I, .J {
     font-size: 24px;
     background: #FFF;
-    padding: 25px;
+    padding: 25px; 
     margin-top: 10px;
     border-radius: 20px;
     color: #000;
@@ -41,6 +41,50 @@ body {
 
 .A2, .B4, .C5, .D5, .E2, .F3, .G4, .H5, .I3, .J5 {
     background-color: greenyellow;
-    padding: 10px;
     border-radius: 10px;
+    padding: 10px;
 }
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.button-bordered {
+    border: none;
+    outline: none;
+    position: relative;
+  }
+  
+  .button-bordered::before,
+  .button-bordered::after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .button-bordered::before {
+    border-top: 2px solid #263059;
+    right: 0;
+    top: -4px;
+  }
+  
+  .button-bordered::after {
+    border-bottom: 2px solid #263059;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .button-bordered:hover::before,
+  .button-bordered:hover::after {
+    width: 100%;
+  }
