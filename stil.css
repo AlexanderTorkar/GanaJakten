@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to left,#F5ECEC, #fcfbfb);
+    background-image: url('styles/blåå.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,7 +225,7 @@ button {
 
 #firework3 {
     left: 30%;
-    top: 65%;
+    top: 75%;
     transform: scale(1.25);
 }
 
