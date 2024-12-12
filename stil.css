@@ -15,13 +15,14 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(#f5f3f3, #CB2B35);
+    background-image: linear-gradient(#ff9696, #CB2B35);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
     width: 100%;
+    height: 20ch;
 }
 
 #finalScore {
