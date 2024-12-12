@@ -11,7 +11,7 @@ const quiz = [
     {
         question: "Vad är världens mest använda namn?",
         image: "styles/questionmark.jpg",
-        options: ["A. Mohammud", "B. Emma", "C. Noah", "D. Eva"],
+        options: ["A. Mohammad", "B. Emma", "C. Noah", "D. Eva"],
         correct: 0
     },
     {
@@ -27,7 +27,7 @@ const quiz = [
         correct: 3
     },
     {
-        question: "Vem är den mest streamde artisten (Spotify)?",
+        question: "Vem är den mest streamde artisten?",
         image: "styles/spotify.png",
         options: ["A. Drake", "B. Arianna Grande", "C. Ed Sheeran", "D. Taylor Swift"],
         correct: 3
