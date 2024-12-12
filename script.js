@@ -65,7 +65,7 @@ const quiz = [
     {
         question: "Vilket land höll de olympiska spelen 2002?",
         image: "styles/oss.jpg",
-        options: ["A. Japan", "B. Australien", "C. England", "D. USA"],
+        options: ["A. Tokyo (Japan)", "B. Sydney (Australien)", "C. London (England)", "D. Salt lake city (USA)"],
         correct: 3
     },
 ];
