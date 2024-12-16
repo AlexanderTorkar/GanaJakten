@@ -1,7 +1,6 @@
 {
-    "name": "EXPRESS-AND-SASS",
-    "description": "Awesome application that will help you achieve your dreams.",
-    "short_name": "Doc",
+    "name": "GanaJakten",
+    "short_name": "GanaJakten",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#FFE9D2",
