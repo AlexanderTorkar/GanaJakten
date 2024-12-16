@@ -5,7 +5,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "styles/ghana-flagga.png",
+            "src": "styles/ghana.svg",
             "type": "image/png",
             "sizes": "192x192"
         }
