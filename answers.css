@@ -8,29 +8,83 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%);
+    background: radial-gradient(circle at 10% 20%, rgb(255, 197, 118) 0%, rgb(254, 106, 103) 47.7%, rgb(240, 23, 23) 92.3%);
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    height: auto; 
+    justify-content: center; 
 }
 
-.header h2 {
+.header {
     font-size: 40px;
-    background: radial-gradient(circle at 10% 20%, rgb(255, 197, 118) 0%, rgb(254, 106, 103) 47.7%, rgb(240, 23, 23) 92.3%);
-    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: #FFF;
+    margin: 50px auto;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 8px 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.A, .B, .C, .D, .E, .F, .G, .H, .I, .J {
+    font-size: 24px;
+    background: #FFF;
+    padding: 25px; 
     margin-top: 10px;
     border-radius: 20px;
     color: #000;
 }
 
-.A1 {
-    font-size: 24px;
-    background: #f5f3f3;
-    padding: 10px;
-    margin-top: 10px;
+.A2, .B4, .C5, .D5, .E2, .F3, .G4, .H5, .I3, .J5 {
+    background-color: greenyellow;
     border-radius: 10px;
-    color: #000;
+    padding: 10px;
 }
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.button-bordered {
+    border: none;
+    outline: none;
+    position: relative;
+  }
+  
+  .button-bordered::before,
+  .button-bordered::after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .button-bordered::before {
+    border-top: 2px solid #263059;
+    right: 0;
+    top: -4px;
+  }
+  
+  .button-bordered::after {
+    border-bottom: 2px solid #263059;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .button-bordered:hover::before,
+  .button-bordered:hover::after {
+    width: 100%;
+  }

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to left,#F5ECEC, #fcfbfb);
+    background-image: url('styles/blåå.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,13 +15,14 @@ body {
 }
 
 .container {
-    background-image: linear-gradient(#f5f3f3, #CB2B35);
+    background-image: linear-gradient(#f9e8e8, #e4e1e1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
     width: 100%;
+    height: 20ch;
 }
 
 #finalScore {
@@ -224,7 +225,7 @@ button {
 
 #firework3 {
     left: 30%;
-    top: 65%;
+    top: 75%;
     transform: scale(1.25);
 }
 

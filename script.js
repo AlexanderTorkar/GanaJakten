@@ -11,7 +11,7 @@ const quiz = [
     {
         question: "Vad är världens mest använda namn?",
         image: "styles/questionmark.jpg",
-        options: ["A. Mohammud", "B. Emma", "C. Noah", "D. Eva"],
+        options: ["A. Mohammad", "B. Emma", "C. Noah", "D. Eva"],
         correct: 0
     },
     {
@@ -27,7 +27,7 @@ const quiz = [
         correct: 3
     },
     {
-        question: "Vem är den mest streamde artisten (Spotify)?",
+        question: "Vem är den mest streamde artisten?",
         image: "styles/spotify.png",
         options: ["A. Drake", "B. Arianna Grande", "C. Ed Sheeran", "D. Taylor Swift"],
         correct: 3
@@ -139,9 +139,13 @@ function checkAnswer(selectedIndex) {
 }
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('Service Worker Registered'))
+    navigator.serviceWorker.register('./service-worker.js')
+        .then(() => console.log('Service Worker Registered with scope', registration.scope))
         .catch(error => console.error('Service Worker Registration Failed:', error));
 }
 
-
+function startOver() {
+    localStorage.removeItem("score"); // Clear the score
+    localStorage.removeItem("answeredQuestions"); // Clear progress
+    window.location.href = 'index.html'; // Redirect to the start page
+}
