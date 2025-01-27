@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Akaya'; /* Name your font family */
+    src: url('Akaya/AkayaTelivigala-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Akaya";
     background-image: url('styles/blåå.jpg');
     display: flex;
     justify-content: center;
@@ -34,7 +39,7 @@ h2 {
     color: #333;
     opacity: 0;
     animation: message 0.5s ease-in-out 0.5s forwards;
-
+    font-size: 2em;
 }
 
 
@@ -53,10 +58,11 @@ button {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    font-family: "akaya";
 }
 
 .button-bordered {

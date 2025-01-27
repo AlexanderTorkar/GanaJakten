@@ -15,7 +15,7 @@ const quiz = [
         correct: 0
     },
     {
-        question: "Vart uppfanns drickan te?",
+        question: "Vart uppfanns drycken te?",
         image: "styles/te.jpg",
         options: ["A. Japan", "B. Storbritannien", "C. Kina", "D. Indien"],
         correct: 2

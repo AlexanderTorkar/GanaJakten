@@ -17,7 +17,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
     background: #01762E;
     background: radial-gradient(circle at 50.4% 50.5%, rgb(251, 32, 86) 0%, rgb(135, 2, 35) 90%);
     color: #2E2E2E;
@@ -136,7 +135,7 @@ img {
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 600px) and (max-height: 580px) and (orientation: landscape) {
+@media screen and (max-width: 1200px) and (max-height: 580px) and (orientation: landscape) {
     .container {
         display: flex;
         flex-wrap: wrap;
