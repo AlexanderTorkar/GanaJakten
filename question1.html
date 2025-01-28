@@ -2,147 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>Document</title>
-    <script>navigator.serviceWorker.register("./service-worker.js")</script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css?version=1.0">
-    <link rel="stylesheet" href="style.sass?version=1.0">
+    <link rel="stylesheet" href="style.scss?version=1.0">
     <link rel="manifest" href="./manifest.json?version=1.0">
-    <script src="script.js?version=1.0"></script>
 </head>
 
 <body>
     <div class="container">
         <h2 id="question">Loading question...</h2>
+        <img id="image" class="emoji img" src="" alt="Question Image" style="display: none;">
+        <div id="options" class="options-container"></div>
+    </div>
 
-        <img id="image" class="emoji img" src="" alt="">
-        
-        <div id="options" class="options-container options button"></div>
-        
-        <script>
-        //Quiz dataa
-        const quiz = [
-            {
-                question: "Vad är världens mest använda namn?",
-                image: "styles/questionmark.jpg",
-                options: ["A. Mohammad", "B. Emma", "C. Noah", "D. Eva"],
-                correct: 0
-            },
-            {
-                question: "Vart uppfanns drycken te?",
-                image: "styles/te.jpg",
-                options: ["A. Japan", "B. Storbritannien", "C. Kina", "D. Indien"],
-                correct: 2
-            },
-            {
-                question: "Vad heter Ghanas huvudstad?",
-                image: "styles/ghana-flagga.png",
-                options: ["A. Lagos", "B. Kumasi", "C. Nairobi", "D. Accra"],
-                correct: 3
-            },
-            {
-                question: "Vem är den mest streamde artisten?",
-                image: "styles/spotify.png",
-                options: ["A. Drake", "B. Arianna Grande", "C. Ed Sheeran", "D. Taylor Swift"],
-                correct: 3
-            },
-            {
-                question: "Vilken film har fått bäst betyg (imbd)?",
-                image: "styles/imbd.jpg",
-                options: ["A. The Shawshank Redemption", "B. The godfather", "C. The dark knight", "D. The godfather II"],
-                correct: 0
-            },
-            {
-                question: "Vilket år lanserades den första iphone?",
-                image: "styles/iphone.jpg",
-                options: ["A. 2005", "B. 2007", "C. 2009", "D. 2004"],
-                correct: 1
-            },
-            {
-                question: "Vilket år grundades hogia?",
-                image: "styles/hogia.jpg",
-                options: ["A. 1977", "B. 1985", "C. 1980", "D. 1990"],
-                correct: 2
-            },
-            {
-                question: "Vilken volvo såldes mest under 2023 (globalt)?",
-                image: "styles/volv.jpg",
-                options: ["A. XC40", "B. XC90", "C. V90", "D. XC60"],
-                correct: 3
-            },
-            {
-                question: "Vem uppfann World Wide Web (www)?",
-                image: "styles/www.png",
-                options: ["A. Bill Gates", "B. Tim Berners-Lee", "C. Elon Musk", "D. Steve Jobs "],
-                correct: 1
-            },
-            {
-                question: "Vilket stad höll de olympiska spelen 2002?",
-                image: "styles/oss.jpg",
-                options: ["A. Tokyo (Japan)", "B. Sydney (Australien)", "C. London (England)", "D. Salt lake city (USA)"],
-                correct: 3
-            }
-        ];
-
-        let currentQuestionIndex = 0;
-        let score = 0
-
-         // Load the current question
-        function loadQuestion() {
-            const questionElement = document.getElementById('question');
-            const questionImage = document.getElementById('image');
-            const optionsElement = document.getElementById('options');
-            
-
-            
-            optionsElement.innerHTML = '';
-
-            // Get the current question
-            const currentQuestion = quiz[currentQuestionIndex];
-            questionElement.textContent = currentQuestion.question;
-
-            // Set the image if provided
-            if (currentQuestion.image) {
-                questionImage.src = currentQuestion.image;
-                questionImage.style.display = 'block';
-            } else {
-                questionImage.style.display = 'none';
-            }
-
-            // Load options
-            currentQuestion.options.forEach((option, index) => {
-                const button = document.createElement('button');
-                button.textContent = option;
-                button.onclick = () => nextQuestion(index);
-                optionsElement.appendChild(button);
-            });
-        }
-
-         // Handle answer selection
-         function selectAnswer(selectedIndex) {
-            const currentQuestion = quiz[currentQuestionIndex];
-
-            // Check if the selected answer is correct
-            if (selectedIndex === currentQuestion.correct) {
-                score++;
-                localStorage.setItem("score", score); 
-            }
-         }
-
-        function nextQuestion() {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < quiz.length) {
-                loadQuestion();
-            } else {
-                window.location.href = 'results.html';
-            }
-        }
-        // Initialize the quiz
-        loadQuestion();
-
-        </script>
-     </div>
-     
+    <!-- Include the script for quiz functionality -->
+    <script type="module" src="script.js?version=1.0"></script>
 </body>
 </html>

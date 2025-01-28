@@ -7,15 +7,16 @@
     <script>navigator.serviceWorker.register("./service-worker.js")</script> 
     <link rel="stylesheet" href="stil.css?version=1.0">
     <link rel="manifest" href="./manifest.json?version=1.0">
-    <script src="script.js?version=1.0"></script>
 </head>
 <body onload="displayResults()">
     <div class="container">
-        <h2>Resultat</h2>
+        <h2>Result</h2>
         <p id="finalScore"></p>
-        <button class="button-bordered" onclick="resetGame()">Spela igen</button>
-        <button class="button-bordered" onclick="answers()">Visa Svar</button>
+        <button class="button-bordered" onclick="resetGame()">Play Again</button>
+        <button class="button-bordered" onclick="answers()">Show Answers</button>
     </div>
+
+    <script src="results.js"></script>
 
     <div class="firework" id="firework1">
         <div class="cracker gul"></div>

@@ -7,85 +7,17 @@
     <script>navigator.serviceWorker.register("./service-worker.js")</script> 
     <link rel="stylesheet" href="answers.css?version=1.0">
     <link rel="manifest" href="./manifest.json?version=1.0">
-    <script src="script.js?version=1.0"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="header">
-            <h2>Korrekta Svar</h2>
+            <h2>The Correct Answers</h2>
         </div>
-        <button class="button-bordered" onclick="startOver()">Spela igen</button>
-        <div class="options">
-            <div class="A"> 
-                <p class = A1> Vad är världens mest använda namn? </p>
-                <p class = A2> A. Mohammad </p>
-                <p class = A3> B. Emma </p>
-                <p class = A4> C. Noah </p>
-                <p class = A5> D. Eva </p>
-            </div>
-            <div class="B"> 
-                <p class = B1> Vart uppfanns drycken te? </p>
-                <p class = B2> A. Japan </p>
-                <p class = B3> B. Storbritannien </p>
-                <p class = B4> C. Kina </p>
-                <p class = B5> D. Indien </p>
-            </div>
-            <div class="C"> 
-                <p class = C1> Vad heter Ghanas huvudstad? </p>
-                <p class = C2> A. Lagos </p>
-                <p class = C3> B. Kumasi </p>
-                <p class = C4> C. Nairobi </p>
-                <p class = C5> D. Accra </p>
-            </div>
-            <div class="D"> 
-                <p class = D1> Vem är den mest streamde artisten (Spotify)? </p>
-                <p class = D2> A. Drake </p>
-                <p class = D3> B. Ariana Grande </p>
-                <p class = D4> C. Ed Sheeran </p>
-                <p class = D5> D. Taylor Swift </p>
-            </div>
-            <div class="E"> 
-                <p class = E1> Vilken film har fått bäst betyg (IMDB)? </p>
-                <p class = E2> A. The Shawshank Redemption </p>
-                <p class = E3> B. The Godfather </p>
-                <p class = E4> C. The Dark Knight </p>
-                <p class = E5> D. The Godfather II </p>
-            </div>
-            <div class="F"> 
-                <p class = F1> Vilket år lanserades den första iphone? </p>
-                <p class = F2> A. 2005 </p>
-                <p class = F3> B. 2007 </p>
-                <p class = F4> C. 2009 </p>
-                <p class = F5> D. 2004 </p>
-            </div>
-            <div class="G"> 
-                <p class = G1> Vilket år grundades hogia? </p>
-                <p class = G2> A. 1977 </p>
-                <p class = G3> B. 1985 </p>
-                <p class = G4> C. 1980 </p>
-                <p class = G5> D. 1990 </p>
-            </div>
-            <div class="H"> 
-                <p class = H1> Vilken volvo såldes mest under 2023 (globalt)? </p>
-                <p class = H2> A. XC40 </p>
-                <p class = H3> B. XC90 </p>
-                <p class = H4> C. V90 </p>
-                <p class = H5> D. XC60 </p>
-            </div>
-            <div class="I"> 
-                <p class = I1> Vem uppfann World Wide Web (www)? </p>
-                <p class = I2> A. Bill Gates </p>
-                <p class = I3> B. Tim Berners-Lee </p>
-                <p class = I4> C. Elon Musk </p>
-                <p class = I5> D. Steve Jobs </p>
-            </div>
-            <div class="J"> 
-                <p class = J1> Vilken stad höll de olympiska spelen 2002? </p>
-                <p class = J2> A. Tokyo (Japan) </p>
-                <p class = J3> B. Sydney (Australien) </p>
-                <p class = J4> C. London (England) </p>
-                <p class = J5> D. Salt Lake City (USA) </p>
-            </div>
+        <button class="button-bordered" onclick="startOver()">Play Again</button>
+        <div id="answersContainer" class="options">
+            <!-- Dynamic answers will be populated here -->
         </div>
+    </div>
+    <script src="answers.js"></script>
 </body>
+</html>
