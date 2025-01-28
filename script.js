@@ -1,74 +1,9 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
-<<<<<<< HEAD
 // Initialize Supabase client
 const SUPABASE_URL = 'https://zsmdppjabodiqhlgafth.supabase.co'; // Replace with your Supabase URL
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzbWRwcGphYm9kaXFobGdhZnRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY0OTcyOTYsImV4cCI6MjA1MjA3MzI5Nn0.StC6QxS2OrBb22yggOi1Nhza_Gum5CC63iYkviuQZgg'; // Replace with your Supabase key
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
-=======
-const quiz = [
-    {
-        question: "Vad är världens mest använda namn?",
-        image: "styles/questionmark.jpg",
-        options: ["A. Mohammad", "B. Emma", "C. Noah", "D. Eva"],
-        correct: 0
-    },
-    {
-        question: "Vart uppfanns drycken te?",
-        image: "styles/te.jpg",
-        options: ["A. Japan", "B. Storbritannien", "C. Kina", "D. Indien"],
-        correct: 2
-    },
-    {
-        question: "Vad heter Ghanas huvudstad?",
-        image: "styles/ghana-flagga.png",
-        options: ["A. Lagos", "B. Kumasi", "C. Nairobi", "D. Accra"],
-        correct: 3
-    },
-    {
-        question: "Vem är den mest streamde artisten?",
-        image: "styles/spotify.png",
-        options: ["A. Drake", "B. Arianna Grande", "C. Ed Sheeran", "D. Taylor Swift"],
-        correct: 3
-    },
-    {
-        question: "Vilken film har fått bäst betyg (imdb)?",
-        image: "styles/imbd.jpg",
-        options: ["A. The Shawshank Redemption", "B. The godfather", "C. The dark knight", "D. The godfather II"],
-        correct: 0
-    },
-    {
-        question: "Vilket år lanserades den första iPhone?",
-        image: "styles/iphone.jpg",
-        options: ["A. 2005", "B. 2007", "C. 2009", "D. 2004"],
-        correct: 1
-    },
-    {
-        question: "Vilket år grundades Hogia?",
-        image: "styles/hogia.jpg",
-        options: ["A. 1977", "B. 1985", "C. 1980", "D. 1990"],
-        correct: 2
-    },
-    {
-        question: "Vilken Volvo såldes mest under 2023 (globalt)?",
-        image: "styles/volv.jpg",
-        options: ["A. XC40", "B. XC90", "C. V90", "D. XC60"],
-        correct: 3
-    },
-    {
-        question: "Vem uppfann World Wide Web (www)?",
-        image: "styles/www.png",
-        options: ["A. Bill Gates", "B. Tim Berners-Lee", "C. Elon Musk", "D. Steve Jobs"],
-        correct: 1
-    },
-    {
-        question: "Vilket land höll de olympiska spelen 2002?",
-        image: "styles/oss.jpg",
-        options: ["A. Tokyo (Japan)", "B. Sydney (Australien)", "C. London (England)", "D. Salt lake city (USA)"],
-        correct: 3
-    },
-];
->>>>>>> ed378e924a30335e1c3acfcbf61a934d1b50a479
 
 let quiz = [];
 let currentQuestionIndex = parseInt(localStorage.getItem("answeredQuestions")) || 0;
