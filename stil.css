@@ -57,7 +57,7 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
@@ -224,7 +224,7 @@ button {
 }
 
 #firework2 {
-    left: 60%;
+    left: 70%;
     top: 70%;
     transform: scale(1.55);
 }
@@ -243,12 +243,12 @@ button {
 
 #firework5 {
     left: 80%;
-    top: 50%;
+    top: 30%;
     transform: scale(1.4);
 }
 
 #firework6 {
     left: 15%;
-    top: 45%;
+    top: 34%;
     transform: scale(1.4);
 }
