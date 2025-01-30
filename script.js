@@ -100,12 +100,7 @@ function checkAnswer(selectedIndex) {
     }
 }
 
-// Clear storage and cache when the app is closed
-window.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "hidden") {
-        clearCacheAndStorage();
-    }
-});
+
 
 // Also clear storage if the user reloads or leaves the page
 window.addEventListener("beforeunload", () => {
