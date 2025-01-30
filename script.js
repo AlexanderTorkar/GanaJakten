@@ -112,18 +112,7 @@ window.addEventListener("beforeunload", () => {
     clearCacheAndStorage();
 });
 
-// Function to clear localStorage, sessionStorage, and cache
-async function clearCacheAndStorage() {
-    localStorage.clear();
-    sessionStorage.clear();
 
-    if ('caches' in window) {
-        const cacheNames = await caches.keys();
-        cacheNames.forEach(async (cacheName) => {
-            await caches.delete(cacheName);
-        });
-    }
-}
 
 
 
