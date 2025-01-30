@@ -31,8 +31,7 @@ async function fetchQuizData() {
     try {
         const { data, error } = await supabase
             .from('Epl') // Replace 'quiz' with your table name
-            .select()
-; // Adjust columns as necessary
+            .select(); // Adjust columns as necessary
 
         if (error) {
             console.error("Error fetching quiz data:", error);
