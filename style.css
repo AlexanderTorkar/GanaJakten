@@ -47,6 +47,7 @@ h2 {
     border-radius: 10px;
     color: #000;
     border: solid whitesmoke 2px;
+    width: 20em;
 }
 
 
@@ -58,18 +59,15 @@ img {
     margin-bottom: 20px;
 }
 
-.button {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 
 button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: akaya;
-    width: 10ch;
+    margin: 0.5em;
+    width: 20ch;
     padding: 12px;
     font-size: 20px;
     font-weight: bold;
@@ -136,7 +134,7 @@ button {
     }
 }
 
-@media screen and (max-width: 1200px) and (max-height: 580px) and (orientation: landscape) {
+@media screen and (max-width: 1000px) and (max-height: 580px) and (orientation: landscape) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -168,6 +166,7 @@ button {
         max-height: 70vh;
         align-items: center;
         justify-content: center;
+        margin: 0em;
     }
 
     img {
@@ -181,6 +180,10 @@ button {
     
     .options button {
         padding: 10px;
+    }
+
+    button {
+        margin: 0em;
     }
 }
 
