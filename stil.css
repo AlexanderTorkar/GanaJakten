@@ -27,7 +27,7 @@ body {
     text-align: center;
     max-width: 400px;
     width: 100%;
-    height: 20ch;
+    height: 25ch;
 }
 
 #finalScore {
@@ -57,11 +57,11 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 2ch;
     font-family: "akaya";
 }
 
