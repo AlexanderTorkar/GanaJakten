@@ -24,6 +24,6 @@ function answers() {
 // Function to reset the game
 function resetGame() {
     localStorage.clear;
-    localStorage.clear;
+    sessionStorage.clear;
     window.location.href = 'index.html'; // Redirect to the start page
 }
