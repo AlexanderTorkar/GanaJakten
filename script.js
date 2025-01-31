@@ -101,7 +101,18 @@ function checkAnswer(selectedIndex) {
 }
 
 
+// Clear storage and cache when the app is closed
+window.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+        clearCacheAndStorage();
+    }
+});
 
+window.addEventListener("beforeunload", (event) => {
+    if (performance.getEntriesByType("navigation")[0].type === "reload") {
+        clearCacheAndStorage();
+    }
+});
 
 // Function to clear localStorage, sessionStorage, and cache
 async function clearCacheAndStorage() {
