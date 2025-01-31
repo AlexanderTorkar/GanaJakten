@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Optionally, you can add personalized messages based on the score
     if (score === totalQuestions) {
-        resultElement.textContent += " Perfect score, well done!";
+        resultElement.textContent += " Perfect score, you are perfect!";
     } else if (score >= totalQuestions / 2) {
-        resultElement.textContent += " Great job!";
+        resultElement.textContent += " Great job! you did the job";
     } else {
-        resultElement.textContent += " Better luck next time!";
+        resultElement.textContent += " Hope you are smarter next time (:";
     }
 });
 
