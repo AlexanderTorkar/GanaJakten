@@ -28,6 +28,8 @@ body {
     max-width: 400px;
     width: 100%;
     height: 25ch;
+    display: flex;
+    justify-content: center;
 }
 
 #finalScore {
