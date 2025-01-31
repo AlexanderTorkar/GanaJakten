@@ -23,7 +23,7 @@ function answers() {
 
 // Function to reset the game
 function resetGame() {
-    localStorage.removeItem("score");
-    localStorage.removeItem("answeredQuestions");
+    localStorage.clear;
+    localStorage.clear;
     window.location.href = 'index.html'; // Redirect to the start page
 }
