@@ -18,7 +18,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background: #01762E;
-    background: radial-gradient(circle at 50.4% 50.5%, rgb(251, 32, 86) 0%, rgb(135, 2, 35) 90%);
+    background: radial-gradient(circle at 50.4% 50.5%, rgb(146, 177, 244) 0%, rgb(51, 101, 147) 90%);
     color: #2E2E2E;
 }
 
