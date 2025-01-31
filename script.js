@@ -103,11 +103,7 @@ function checkAnswer(selectedIndex) {
 
 
 
-window.addEventListener("beforeunload", (event) => {
-    if (performance.getEntriesByType("navigation")[0].type === "reload") {
-        clearCacheAndStorage();
-    }
-});
+
 
 // Function to clear localStorage, sessionStorage, and cache
 async function clearCacheAndStorage() {
