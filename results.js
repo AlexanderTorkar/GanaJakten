@@ -5,15 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Display the results message
     const resultElement = document.getElementById("finalScore");
-    resultElement.textContent = `You got ${score} out of ${totalQuestions} right, congrats! 🎉`;
-
-    // Optionally, you can add personalized messages based on the score
     if (score === totalQuestions) {
-        resultElement.textContent += " Perfect score, well done!";
+        resultElement.textContent += `You got ${score} / ${totalQuestions}, You got Perfect score 😲🎉, you are perfect! 😁`;
     } else if (score >= totalQuestions / 2) {
-        resultElement.textContent += " Great job!";
+        resultElement.textContent += `You got ${score} / ${totalQuestions}, You did the job, acceptable 😐`;
     } else {
-        resultElement.textContent += " Better luck next time!";
+        resultElement.textContent += `You got ${score} / ${totalQuestions}, Did you even try?, we are dissapointed 😰 `;
     }
 });
 

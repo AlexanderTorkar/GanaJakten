@@ -102,10 +102,8 @@ function checkAnswer(selectedIndex) {
 
 
 
-// Also clear storage if the user reloads or leaves the page
-window.addEventListener("beforeunload", () => {
-    clearCacheAndStorage();
-});
+
+
 
 // Function to clear localStorage, sessionStorage, and cache
 async function clearCacheAndStorage() {
@@ -122,12 +120,6 @@ async function clearCacheAndStorage() {
 
 
 
-history.replaceState(null, "", location.href);
-window.onpopstate = () => {
-    clearCacheAndStorage();
-    alert("Need to restart game");
-    window.location.href = "index.html"; // Redirect to the start page
-};
 
 // Function to reset the game
 function resetGame() {
