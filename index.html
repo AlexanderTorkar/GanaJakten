@@ -13,8 +13,29 @@
 
     <div class="container">
         <div class="title">GANA QUIZ</div>
-        <a href="question1.html" class="start-button">Start</a>
+        <a href="#" class="start-button" id="startButton">Start</a>
     </div>
+
+    <script>
+        document.getElementById("startButton").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent immediate navigation
+
+            // Clear LocalStorage and Cache
+            localStorage.clear();
+            sessionStorage.clear();
+
+            if ('caches' in window) {
+                caches.keys().then((names) => {
+                    names.forEach((name) => caches.delete(name));
+                });
+            }
+
+            // Navigate to first question after clearing cache
+            setTimeout(() => {
+                window.location.href = "question1.html";
+            }, 100); // Short delay to ensure clearing finishes
+        });
+    </script>
     
 </body>
 </html>
