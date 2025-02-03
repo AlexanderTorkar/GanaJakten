@@ -58,6 +58,16 @@ img {
     margin-bottom: 20px;
 }
 
+#question-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 100px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
 
 
 button {
