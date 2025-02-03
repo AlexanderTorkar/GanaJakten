@@ -13,7 +13,9 @@
 
     <div class="container">
         <div class="title">GANA QUIZ</div>
-        <a href="#" class="start-button" id="startButton">Start Epl quiz</a>
+        <a href="#" class="start-button" id="startButton">Epl quiz</a>
+        <a href="#" class="start-button" id="startButton2">Sweden quiz</a>
+        <a href="#" class="start-button" id="startButton3">Random quiz</a>
     </div>
 
     <script>
@@ -32,7 +34,43 @@
 
             // Navigate to first question after clearing cache
             setTimeout(() => {
-                window.location.href = "question1.html";
+                window.location.href = "epl.html";
+            }, 100); // Short delay to ensure clearing finishes
+        });
+        document.getElementById("startButton2").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent immediate navigation
+
+            // Clear LocalStorage and Cache
+            localStorage.clear();
+            sessionStorage.clear();
+
+            if ('caches' in window) {
+                caches.keys().then((names) => {
+                    names.forEach((name) => caches.delete(name));
+                });
+            }
+
+            // Navigate to first question after clearing cache
+            setTimeout(() => {
+                window.location.href = "sweden.html";
+            }, 100); // Short delay to ensure clearing finishes
+        });
+        document.getElementById("startButton3").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent immediate navigation
+
+            // Clear LocalStorage and Cache
+            localStorage.clear();
+            sessionStorage.clear();
+
+            if ('caches' in window) {
+                caches.keys().then((names) => {
+                    names.forEach((name) => caches.delete(name));
+                });
+            }
+
+            // Navigate to first question after clearing cache
+            setTimeout(() => {
+                window.location.href = "random.html";
             }, 100); // Short delay to ensure clearing finishes
         });
     </script>

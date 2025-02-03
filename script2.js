@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 async function fetchQuizData() {
     try {
         const { data, error } = await supabase
-            .from('Epl') // Replace 'quiz' with your table name
+            .from('Sweden') // Replace 'quiz' with your table name
             .select(); // Adjust columns as necessary
 
         if (error) {
