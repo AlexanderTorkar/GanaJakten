@@ -40,18 +40,48 @@ body {
 
 /* Button styling */
 .button-bordered {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #4CAF50;
+  color: white;
   border: none;
-  border-radius: 4px;
   padding: 10px 20px;
-  font-size: 16px;
+  margin: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  font-size: 2ch;
+  font-family: "akaya";
 }
 
-.button-bordered:hover {
-  background-color: #0056b3;
+.button-bordered {
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.button-bordered::before,
+.button-bordered::after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+
+.button-bordered::before {
+  border-top: 2px solid #263059;
+  right: 0;
+  top: -4px;
+}
+
+.button-bordered::after {
+  border-bottom: 2px solid #263059;
+  bottom: -4px;
+  left: 0;
+}
+
+.button-bordered:hover::before,
+.button-bordered:hover::after {
+  width: 100%;
 }
 
 /* Answers container styling */
