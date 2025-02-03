@@ -18,7 +18,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background: #01762E;
-    background: radial-gradient(circle at 50.4% 50.5%, rgb(251, 32, 86) 0%, rgb(135, 2, 35) 90%);
+    background: radial-gradient(circle at 50.4% 50.5%, rgb(146, 177, 244) 0%, rgb(51, 101, 147) 90%);
     color: #2E2E2E;
 }
 
@@ -27,7 +27,7 @@ body, html {
     height: 95%;
     background: linear-gradient( rgb(182, 244, 146), rgb(51, 139, 147));;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px rgb(36, 1, 1);
+    box-shadow: 0px 5px 20px rgb(144, 143, 143);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

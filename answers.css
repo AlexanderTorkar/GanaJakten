@@ -7,84 +7,101 @@
     font-family: 'Akaya';
 }
 
+/* General styles */
 body {
-    background: radial-gradient(circle at 10% 20%, rgb(255, 197, 118) 0%, rgb(254, 106, 103) 47.7%, rgb(240, 23, 23) 92.3%);
-    background-size: cover;
-    display: flex;
-    margin: 0;
-    height: auto; 
-    justify-content: center; 
+  font-family: Arial, sans-serif;
+  background-image: url('styles/blåå.jpg');
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.header {
-    font-size: 40px;
-    margin-top: 50px;
-    border-radius: 20px;
-    color: #FFF;
-    margin: 50px auto;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-shadow: 8px 10px 5px rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
+/* Container styling */
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
 }
 
-.A, .B, .C, .D, .E, .F, .G, .H, .I, .J {
-    font-size: 24px;
-    background: #FFF;
-    padding: 25px; 
-    margin-top: 10px;
-    border-radius: 20px;
-    color: #000;
+/* Header styling */
+.header h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
 }
 
-.A2, .B4, .C5, .D5, .E2, .F3, .G4, .H5, .I3, .J5 {
-    background-color: greenyellow;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    margin: 10px;
+/* Button styling */
+.button-bordered {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 2ch;
+  font-family: "akaya";
 }
 
 .button-bordered {
-    border: none;
-    outline: none;
-    position: relative;
-  }
-  
-  .button-bordered::before,
-  .button-bordered::after {
-    border: 0 solid transparent;
-    transition: all 0.3s;
-    content: '';
-    height: 0;
-    position: absolute;
-    width: 24px;
-  }
-  
-  .button-bordered::before {
-    border-top: 2px solid #263059;
-    right: 0;
-    top: -4px;
-  }
-  
-  .button-bordered::after {
-    border-bottom: 2px solid #263059;
-    bottom: -4px;
-    left: 0;
-  }
-  
-  .button-bordered:hover::before,
-  .button-bordered:hover::after {
-    width: 100%;
-  }
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.button-bordered::before,
+.button-bordered::after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+
+.button-bordered::before {
+  border-top: 2px solid #263059;
+  right: 0;
+  top: -4px;
+}
+
+.button-bordered::after {
+  border-bottom: 2px solid #263059;
+  bottom: -4px;
+  left: 0;
+}
+
+.button-bordered:hover::before,
+.button-bordered:hover::after {
+  width: 100%;
+}
+
+/* Answers container styling */
+.options {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Dynamic answers styling */
+#answersContainer {
+  font-size: 18px; 
+  line-height: 1.6;
+}
+
+#answersContainer div {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#answersContainer div:last-child {
+  border-bottom: none;
+}
+ 
