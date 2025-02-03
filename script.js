@@ -88,6 +88,12 @@ function checkAnswer(selectedIndex) {
         localStorage.setItem("score", score);
     }
 
+    let count = parseInt(document.getElementById("display").textContent);
+    if (count < 10) {
+        count++;
+        document.getElementById("display").textContent = count;
+    }
+
     // Move to the next question
     currentQuestionIndex++;
     localStorage.setItem("answeredQuestions", currentQuestionIndex);
@@ -135,6 +141,9 @@ window.onpopstate = () => {
     window.location.href = "index.html";
 };
 
+if (performance.getEntriesByType("navigation")[0].type === "reload") {
+    window.location.href = "index.html"; // Redirect to start page
+}
 
 
 if ('serviceWorker' in navigator) {
