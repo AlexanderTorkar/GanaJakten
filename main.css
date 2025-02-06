@@ -37,7 +37,7 @@ body {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  text-shadow: 8px 10px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
@@ -61,7 +61,7 @@ body {
   height: 1.2em;
 }
 
-.start-button:hover {
+.start-button:hover, .quizButton:hover {
   background-color: darkred;
 }
 
