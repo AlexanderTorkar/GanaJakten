@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Akaya'; /* Name your font family */
-  src: url('Akaya/AkayaTelivigala-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  font-family: 'Akaya';
+  src: url('Akaya/AkayaTelivigala-Regular.ttf');
 }
 
 
@@ -60,7 +60,6 @@ body {
   background-color: darkred;
 }
 
-/* New CSS for horizontal alignment */
 fieldset {
   border: none;
   display: flex;
@@ -76,14 +75,14 @@ fieldset div {
 }
 
 input[type="radio"] {
-  margin-right: 10px; /* Adds space between the radio button and label */
+  margin-right: 10px; 
 }
 
 @media (min-width: 768px) {
   fieldset {
-    flex-direction: row; /* Align items horizontally on larger screens */
+    flex-direction: row;
     justify-content: center;
-    gap: 20px; /* Adds more space between the quiz options */
+    gap: 20px; 
   }
 }
 
