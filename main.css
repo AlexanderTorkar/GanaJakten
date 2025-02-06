@@ -17,6 +17,7 @@ body, html {
 body {
   background: linear-gradient( rgb(182, 244, 146), rgb(51, 139, 147));;
   background-size: cover;
+  max-height: 100vh;
 }
 
 .container {
