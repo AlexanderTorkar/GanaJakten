@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #e8ecf1;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -37,7 +37,7 @@ body {
 
 .button-bordered {
   background-color: #4CAF50;
-  color: white;
+  color: #e8ecf1;
   border: none;
   padding: 10px 20px;
   margin: 5px;
@@ -92,7 +92,7 @@ body {
 
 #answersContainer div {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e8ecf1;
 }
 
 #answersContainer div:last-child {
