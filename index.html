@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <title>GanaJakten</title>
     <script>navigator.serviceWorker.register("./service-worker.js")</script> 
     <link rel="stylesheet" href="main.css?version=1.0">
@@ -13,16 +12,34 @@
 
     <div class="container">
         <div class="title">GANA QUIZ</div>
-        <a href="#" class="start-button" id="startButton">Epl quiz</a>
-        <a href="#" class="start-button" id="startButton2">Sweden quiz</a>
-        <a href="#" class="start-button" id="startButton3">Random quiz</a>
+        <fieldset>
+            <legend>Select a quiz:</legend>
+
+            <div>
+                <input type="radio" id="eplQuiz" name="quiz" value="epl" checked />
+                <label for="eplQuiz" class="quizButton">EPL Quiz</label>
+            </div>
+
+            <div>
+                <input type="radio" id="swedenQuiz" name="quiz" value="sweden" />
+                <label for="swedenQuiz" class="quizButton">Sweden Quiz</label>
+            </div>
+
+            <div>
+                <input type="radio" id="randomQuiz" name="quiz" value="random" />
+                <label for="randomQuiz" class="quizButton">Random Quiz</label>
+            </div>
+        </fieldset>
+
+        <a href="#" class="start-button" id="startButton">Start Quiz</a>
     </div>
 
     <script>
         document.getElementById("startButton").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent immediate navigation
+            event.preventDefault(); 
 
-            // Clear LocalStorage and Cache
+            const selectedQuiz = document.querySelector('input[name="quiz"]:checked').value;
+
             localStorage.clear();
             sessionStorage.clear();
 
@@ -32,46 +49,23 @@
                 });
             }
 
-            // Navigate to first question after clearing cache
+            document.body.classList.add('fade-out');
+
             setTimeout(() => {
-                window.location.href = "epl.html";
-            }, 100); // Short delay to ensure clearing finishes
-        });
-        document.getElementById("startButton2").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent immediate navigation
-
-            // Clear LocalStorage and Cache
-            localStorage.clear();
-            sessionStorage.clear();
-
-            if ('caches' in window) {
-                caches.keys().then((names) => {
-                    names.forEach((name) => caches.delete(name));
-                });
-            }
-
-            // Navigate to first question after clearing cache
-            setTimeout(() => {
-                window.location.href = "sweden.html";
-            }, 100); // Short delay to ensure clearing finishes
-        });
-        document.getElementById("startButton3").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent immediate navigation
-
-            // Clear LocalStorage and Cache
-            localStorage.clear();
-            sessionStorage.clear();
-
-            if ('caches' in window) {
-                caches.keys().then((names) => {
-                    names.forEach((name) => caches.delete(name));
-                });
-            }
-
-            // Navigate to first question after clearing cache
-            setTimeout(() => {
-                window.location.href = "random.html";
-            }, 100); // Short delay to ensure clearing finishes
+                switch (selectedQuiz) {
+                    case 'epl':
+                        window.location.href = "epl.html";
+                        break;
+                    case 'sweden':
+                        window.location.href = "sweden.html";
+                        break;
+                    case 'random':
+                        window.location.href = "random.html";
+                        break;
+                    default:
+                        window.location.href = "epl.html"; // Default fallback
+                }
+            }, 500); 
         });
     </script>
     

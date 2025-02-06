@@ -42,7 +42,7 @@ body {
   border-radius: 5px;
 }
 
-.start-button {
+.start-button, .quizButton {
   font-size: 2.5rem;
   color:#FFD100 ;
   background-color: #AE242D;
@@ -58,4 +58,64 @@ body {
 
 .start-button:hover {
   background-color: darkred;
+}
+
+/* New CSS for horizontal alignment */
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 10px; /* Adds space between the radio button and label */
+}
+
+@media (min-width: 768px) {
+  fieldset {
+    flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: center;
+    gap: 20px; /* Adds more space between the quiz options */
+  }
+}
+
+/* View Transitions */
+::view-transition-new(root) {
+  animation: slide-in 2s ease-out;
+}
+
+::view-transition-old(root) {
+  animation: slide-out 2s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Fade-out transition */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
