@@ -64,18 +64,33 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column; 
-  align-items: center; 
   gap: 10px; 
   margin-bottom: 20px;
 }
 
 fieldset div {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
+
+
 
 input[type="radio"] {
   margin-right: 10px; 
+}
+
+@media screen and (max-width: 1100px) and (max-height: 580px) and (orientation: landscape) {
+  .quiz {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between options */
+  }
+  
+  .quiz div {
+    display: flex;
+    flex-direction: column-reverse; /* Stack label above radio */
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {

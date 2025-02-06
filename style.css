@@ -124,7 +124,7 @@ button {
 }
 
 /* for iphone */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479px) and (orientation: portrait) {
     .container {
         width: 95%;
         height: 90%;
@@ -160,7 +160,7 @@ button {
     }
 }
 
-@media screen and (max-width: 1000px) and (max-height: 580px) and (orientation: landscape) {
+@media screen and (max-width: 1100px) and (max-height: 580px) and (orientation: landscape) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -218,4 +218,20 @@ button {
         gap: 10px;
         padding: 0px;
     }
+}
+
+@media screen and (max-height: 350px) and (orientation: landscape ){
+    #options button{
+        padding: 0.3em;
+    }
+    #options {
+        gap: 0.3em;
+    }
+    .container {
+        gap: 0px;
+    }
+    #question{
+        margin-top: 2em;
+    }
+    
 }
