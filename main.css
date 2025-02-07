@@ -57,13 +57,13 @@ body {
   margin: 1rem;
 }
 
+.quizButton:hover {
+  background-color: darkred;
+}
+
 .quizButton{
   width: 6em;
   height: 1.2em;
-}
-
-.start-button:hover, .quizButton:hover {
-  background-color: darkred;
 }
 
 fieldset {
@@ -76,12 +76,6 @@ fieldset {
 fieldset div {
   display: flex;
   justify-content: center;
-}
-
-
-
-input[type="radio"] {
-  margin-right: 0.5rem; 
 }
 
 @media screen and (max-width: 1100px) and (max-height: 580px) and (orientation: landscape) {
