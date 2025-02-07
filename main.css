@@ -43,7 +43,7 @@ body {
   border-radius: 5px;
 }
 
-.start-button, .quizButton {
+.quizButton {
   font-size: 2rem;
   color:#FFD100 ;
   background-color: #AE242D;
@@ -54,7 +54,7 @@ body {
   text-decoration: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
-  margin: 0;
+  margin: 1rem;
 }
 
 .quizButton{
